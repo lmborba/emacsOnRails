@@ -1,0 +1,14 @@
+;; Object semantic.cache
+;; SEMANTICDB Tags save file
+(semanticdb-project-database "semantic.cache"
+  :file "semantic.cache"
+  :tables (list 
+   (semanticdb-table "comprspec.el"
+    :file "comprspec.el"
+    :pointmax 4785
+    :major-mode 'emacs-lisp-mode
+    :tokens '(("shell" include nil nil nil [1922 1938]) ("autotest-use-ui" variable nil nil nil "Should we use test-unit's UI?" nil [1940 2044]) ("autotest-command" variable nil "rspec spec/" nil "Command name to use to execute autotest." nil [2046 2171]) ("comprspec" function nil nil ((user-visible . t)) "Fire up an instance of autotest in its own buffer with shell bindings and compile-mode highlighting and linking." nil [2173 3276]) ("autotest-switch" function nil nil ((user-visible . t)) "Switch back and forth between autotest and the previous buffer" nil [3278 3505]) ("eval-when-compile" code nil [3507 3555]) ("if" code nil [3557 4762]) ("comprspec" package nil nil nil [4764 4784]))
+    :unmatched-syntax 'nil
+    )
+   )
+  )

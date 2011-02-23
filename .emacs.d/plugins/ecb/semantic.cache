@@ -1,0 +1,34 @@
+;; Object semantic.cache
+;; SEMANTICDB Tags save file
+(semanticdb-project-database "semantic.cache"
+  :file "semantic.cache"
+  :tables (list 
+   (semanticdb-table "ecb-examples.el"
+    :file "ecb-examples.el"
+    :pointmax 17976
+    :major-mode 'emacs-lisp-mode
+    :tokens '(("ecb-util" include nil nil nil [2696 2715]) ("ecb-layout" include nil nil nil [2716 2737]) ("ecb-common-browser" include nil nil nil [2738 2767]) ("eval-when-compile" code nil [2769 2833]) ("ecb-examples-bufferinfo-buffer-name" variable nil " *ECB buffer info*" ((const . t)) nil nil [3074 3141]) ("ecb-examples-bufferinfo-last-file" variable nil nil nil nil nil [3142 3188]) ("ecb-examples-print-file-attributes" function nil ("buffer" "filename") nil "Insert in buffer BUFFER some file-information about FILENAME." nil [3258 4170]) ("ecb-examples-print-non-filebuffer" function nil ("buffer" "buffer-name") nil "Insert in buffer BUFFER a small message for buffer with name BUFFER-NAME." nil [4173 4533]) ("ecb-examples-bufferinfo-sync" function nil nil ((user-visible . t)) "Synchronizes the buffer-info buffer with current source if changed.
+Can be called interactively but normally this should not be necessary because
+it will be called autom. with `ecb-current-buffer-sync-hook'." nil [4767 6544]) ("ecb-maximize-bufferinfo-window" function nil nil ((user-visible . t)) "Maximize the bufferinfo-window.
+I.e. delete all other ECB-windows, so only one ECB-window and the
+edit-window(s) are visible (and maybe a compile-window). Works
+also if the ECB-analyse-window is not visible in current layout." nil [6589 6944]) ("ecb-goto-bufferinfo-window" function nil nil ((user-visible . t)) "Make the bufferinfo-window the current window." nil [6946 7110]) ("defecb-window-dedicator" code nil [7229 7548]) ("ecb-examples-action-buffer-name" variable nil " *ECB action buffer*" ((const . t)) nil nil [7789 7854]) ("ecb-examples-action-buffer-keymap" variable nil nil nil nil nil [7855 7901]) ("ecb-examples-insert-text-in-action-buffer" function nil ("text") nil "Insert TEXT at point and make it highlight-able for mouse-movement over the
+text." nil [7995 8246]) ("ecb-examples-action-buffer-create" function nil nil nil "Return the action-buffer with name `ecb-examples-action-buffer-name' If
+the buffer does not exist it will be created. The buffer is read only,
+contains two buttons [prior] and [next] and mouse-2 calls
+`ecb-examples-action-buffer-clicked'." nil [8248 9931]) ("ecb-examples-action-buffer-clicked" function nil ("e") ((user-visible . t)) "Perform the right action for the mouse-click.
+If the user clicks onto [prior] the buffer in the edit-window is scrolled up,
+if clicks onto [next] the buffer in the edit-window is scrolled down.
+Otherwise nothing will be done." nil [10000 10662]) ("ecb-maximize-action-window" function nil nil ((user-visible . t)) "Maximize the action-window.
+I.e. delete all other ECB-windows, so only one ECB-window and the
+edit-window(s) are visible (and maybe a compile-window). Works
+also if the ECB-analyse-window is not visible in current layout." nil [10707 11050]) ("ecb-goto-action-window" function nil nil ((user-visible . t)) "Make the action-window the current window." nil [11052 11204]) ("defecb-window-dedicator" code nil [11319 11610]) ("ecb-layout-define" code nil [11852 14087]) ("ecb-examples-preact-layout" variable nil nil nil nil nil [14392 14431]) ("ecb-examples-preact-windows-height" variable nil nil nil nil nil [14432 14479]) ("ecb-examples-preact-compile-window-height" variable nil nil nil nil nil [14480 14534]) ("ecb-examples-preactivation-state" function nil ("action") nil (cond ((equal action (quote save)) (setq ecb-examples-preact-layout ecb-layout-name ecb-examples-preact-windows-height ecb-windows-height ecb-examples-preact-compile-window-height ecb-compile-window-height)) ((equal action (quote restore)) (setq ecb-layout-name ecb-examples-preact-layout ecb-windows-height ecb-examples-preact-windows-height ecb-compile-window-height ecb-examples-preact-compile-window-height))) nil [14535 15161]) ("ecb-examples-activate" function nil nil ((user-visible . t)) "Activate the new layout \"example-layout1\".
+Add `ecb-examples-bufferinfo-sync' to `ecb-current-buffer-sync-hook', set
+`ecb-compile-window-height' to 5 and `ecb-windows-height' to 6. The
+preactivation-state is saved and will be restored by
+`ecb-examples-deactivate'." nil [15830 16913]) ("ecb-examples-deactivate" function nil nil ((user-visible . t)) "Deactivate the new layout \"example-layout1\".
+Remove `ecb-examples-bufferinfo-sync' from `ecb-current-buffer-sync-hook' and
+restore the state as before activation." nil [16949 17679]) ("ecb-examples" package nil nil nil [17922 17945]))
+    )
+   )
+  )
