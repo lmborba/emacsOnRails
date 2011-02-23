@@ -1,0 +1,8 @@
+Configuration files for emacs configuration.
+Made to rails programmers
+
+Changelog (2011/02/23):
+
+ - Command "C-c s" runs just one rspec example.
+ - Command "C-c t" toogles between spec and app files.
+ - Command "C-c i" indent a selected region of the file.
