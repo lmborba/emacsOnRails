@@ -1,2 +1,5 @@
+*
 !.emacs
 !.emacs.d
+!README
+!.gitignore
