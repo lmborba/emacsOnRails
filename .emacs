@@ -296,3 +296,7 @@
 
 (require 'ruby-block)
 (ruby-block-mode t)
+
+(require 'magit)
+
+(global-set-key (kbd "C-c g") 'magit-status)

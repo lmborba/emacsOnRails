@@ -6,3 +6,9 @@ Changelog (2011/02/23):
  - Command "C-c s" runs just one rspec example.
  - Command "C-c t" toogles between spec and app files.
  - Command "C-c i" indent a selected region of the file.
+
+Changelog (2011/02/24):
+
+ - Added support to magit.
+  - See http://philjackson.github.com/magit/magit.html for instructions.
+ - Command "C-c g" opens a magit-status buffer.
